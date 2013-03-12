@@ -242,7 +242,7 @@ function getCategory($authentication,$id)
 						'label' => $categorie->label,
 						'description' => $categorie->description,
 						'socid' => $categorie->socid,
-						//'visible'=>$categorie->visible,
+						'visible'=>$categorie->visible,
 						'type' => $categorie->type,
 						'dir' => $pdir,
 						'photos' => $categorie->liste_photos($dir,$nbmax=10)
@@ -262,7 +262,7 @@ function getCategory($authentication,$id)
 								'label'=>$fille->label,
 								'description'=>$fille->description,
 								'socid'=>$fille->socid,
-								//'visible'=>$fille->visible,
+								'visible'=>$fille->visible,
 								'type'=>$fille->type,
 								'dir' => $pdir,
 								'photos' => $fille->liste_photos($dir,$nbmax=10)

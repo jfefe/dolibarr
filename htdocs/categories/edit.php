@@ -152,6 +152,11 @@ print '<tr><td>'.$langs->trans("In").'</td><td>';
 print $form->select_all_categories($type,$object->fk_parent,'parent',64,$object->id);
 print '</td></tr>';
 
+// Visible
+print '<tr><td>'.$langs->trans("Visible").'</td><td>';
+print $form->selectyesno('visible',$object->visible,1);
+print '</td></tr>';
+
 print '</table>';
 print '<br>';
 

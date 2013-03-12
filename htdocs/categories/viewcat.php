@@ -124,6 +124,12 @@ print $langs->trans("Description").'</td><td>';
 print nl2br($object->description);
 print '</td></tr>';
 
+// Visibility
+print '<tr><td width="20%" class="notopnoleft">';
+print $langs->trans("Visibility").'</td><td>';
+print $object->visible?img_picto($langs->trans('Yes'), 'on'):img_picto($langs->trans('No'), 'off');
+print '</td></tr>';
+
 print '</table>';
 
 print '</div>';

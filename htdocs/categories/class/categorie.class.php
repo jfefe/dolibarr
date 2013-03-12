@@ -45,6 +45,7 @@ class Categorie
 	var $socid;
 	var $type;					// 0=Product, 1=Supplier, 2=Customer/Prospect, 3=Member
 	var $import_key;
+	var $visible;
 
 	var $cats=array();			// Tableau en memoire des categories
 	var $motherof=array();
